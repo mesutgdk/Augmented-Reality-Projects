@@ -19,12 +19,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
 
-        let sphere = SCNSphere(radius: 0.2)
+        let sphere = SCNSphere(radius: 0.3)
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "art.scnassets/moon.jpg")
+        
         sphere.materials = [material]
         let node = SCNNode()
-        node.position = SCNVector3(x: 0, y: 0.1, z: -0.05)
+        node.position = SCNVector3(x: 1, y: 0.1, z: -1.2)
         node.geometry = sphere
         sceneView.scene.rootNode.addChildNode(node)
         sceneView.automaticallyUpdatesLighting = true
