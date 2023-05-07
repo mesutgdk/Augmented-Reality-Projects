@@ -13,6 +13,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    var dotNodes = [SCNNode] ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,7 +68,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                                       y: hitResult.worldTransform.columns.3.y,
                                       z: hitResult.worldTransform.columns.3.z)
         sceneView.scene.rootNode.addChildNode(dotNode)
+        
+        dotNodes.append(dotNode)
+        
+        if dotNodes.count >= 2 {
+            calculate ()
+        }
+        
+        func calculate (){
+            let startNode = dotNodes[0]
+            let endNode = dotNodes[1]
+            
+            print(startNode)
+            print(endNode)
+        }
     }
+    
     // MARK: - ARSCNViewDelegate
     
 /*
