@@ -79,8 +79,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let startNode = dotNodes[0]
             let endNode = dotNodes[1]
             
-            print(startNode)
-            print(endNode)
+            let a = endNode.position.x - startNode.position.x
+            let b = endNode.position.y - startNode.position.y
+            let c = endNode.position.z - startNode.position.z
+            
+            let distance = sqrt(powf(a, 2) + powf(b, 2) + powf(c, 2))
+            print(abs(distance))
         }
     }
     
