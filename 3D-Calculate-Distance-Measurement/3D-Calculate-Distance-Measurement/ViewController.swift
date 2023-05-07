@@ -15,6 +15,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var dotNodes = [SCNNode] ()
     
+    var textNode = SCNNode()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -100,11 +102,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     func updateText(text: String, atPosition: SCNVector3) {
         
+       
+        
         let textGeometry = SCNText(string: text, extrusionDepth: 1.0)
         
         textGeometry.firstMaterial?.diffuse.contents = UIColor.red
         
-        let textNode = SCNNode(geometry: textGeometry)
+        textNode.removeFromParentNode()
+        
+        textNode = SCNNode(geometry: textGeometry)
         
         textNode.position = SCNVector3(x: atPosition.x , y: atPosition.y + 0.01, z: atPosition.z)
         
