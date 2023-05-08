@@ -31,13 +31,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARImageTrackingConfiguration ()
+        let configuration = ARWorldTrackingConfiguration ()
         
         if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "Pokemon Cards", bundle: Bundle.main) {
             
-            configuration.trackingImages = imageToTrack
+            configuration.detectionImages = imageToTrack
             
-            configuration.maximumNumberOfTrackedImages = 1
+            configuration.maximumNumberOfTrackedImages = 2
             
             print("image successfully Added")
             
@@ -57,6 +57,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     // MARK: - ARSCNViewDelegate
     
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        
         let node = SCNNode()
         
         if let imageAnchor = anchor as? ARImageAnchor {
@@ -70,16 +71,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             node.addChildNode(planeNode)
             
-            if let pokeScene = SCNScene(named: "art.scnassets/eevee.scn"){
-                
-                if let pokeNode = pokeScene.rootNode.childNodes.first {
+            if imageAnchor.referenceImage.name == "eevee" {
+                if let pokeScene = SCNScene(named: "art.scnassets/eevee.scn"){
                     
-                    pokeNode.eulerAngles.x = .pi/2
+                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+                        
+                        pokeNode.eulerAngles.x = .pi/2
+                        
+                        planeNode.addChildNode(pokeNode)
+                    }
                     
-                    planeNode.addChildNode(pokeNode)
                 }
-                
             }
+                if imageAnchor.referenceImage.name == "oddish"{
+                    
+                    if let pokeScene = SCNScene(named: "art.scnassets/oddish.scn"){
+                        
+                        if let pokeNode = pokeScene.rootNode.childNodes.first {
+                            
+                            pokeNode.eulerAngles.x = .pi/2
+                            
+                            planeNode.addChildNode(pokeNode)
+                        }
+                    }
+                    
+                }
+            
         }
         return node
     }
