@@ -13,6 +13,7 @@
 		6347D6292A0ABF890057D802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6347D6272A0ABF890057D802 /* Main.storyboard */; };
 		6347D62B2A0ABF8A0057D802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6347D62A2A0ABF8A0057D802 /* Assets.xcassets */; };
 		6347D62E2A0ABF8A0057D802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6347D62C2A0ABF8A0057D802 /* LaunchScreen.storyboard */; };
+		6347D6352A0AC11E0057D802 /* harrypotter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6347D6342A0AC11E0057D802 /* harrypotter.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		6347D6282A0ABF890057D802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6347D62A2A0ABF8A0057D802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6347D62D2A0ABF8A0057D802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6347D6342A0AC11E0057D802 /* harrypotter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = harrypotter.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 		6347D6152A0ABF890057D802 = {
 			isa = PBXGroup;
 			children = (
+				6347D6342A0AC11E0057D802 /* harrypotter.mp4 */,
 				6347D6202A0ABF890057D802 /* Live-NewsPaper-Video */,
 				6347D61F2A0ABF890057D802 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				6347D6242A0ABF890057D802 /* art.scnassets in Resources */,
 				6347D62E2A0ABF8A0057D802 /* LaunchScreen.storyboard in Resources */,
+				6347D6352A0AC11E0057D802 /* harrypotter.mp4 in Resources */,
 				6347D62B2A0ABF8A0057D802 /* Assets.xcassets in Resources */,
 				6347D6292A0ABF890057D802 /* Main.storyboard in Resources */,
 			);
@@ -285,7 +289,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B34M97ZY6W;
+				DEVELOPMENT_TEAM = 32RLP65M49;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B34M97ZY6W;
+				DEVELOPMENT_TEAM = 32RLP65M49;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
