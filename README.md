@@ -14,7 +14,7 @@ just be sure to use only physical devices and it should be iphone 6s and upper m
 ![IMG_0017](https://github.com/mesutgdk/Augmented-Reality-Projects/assets/112901255/38fc465d-df56-4f56-942f-cfacfdd11a4b)
 ![IMG_0016](https://github.com/mesutgdk/Augmented-Reality-Projects/assets/112901255/c08cfbe9-4d9b-42d8-8a91-62397d9c3657)
 
-## Calculate Distance Measurement
+## 3D Calculate Distance Measurement
 
 * With touchesBegan using ARKit and SceneKit, i define 2 dots in 3D world,
 * After that i measure the distance between x-y-z axes,
