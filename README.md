@@ -30,6 +30,16 @@ just be sure to use only physical devices and it should be iphone 6s and upper m
 ![moon](https://github.com/mesutgdk/Augmented-Reality-Projects/assets/112901255/dfe57b1a-044a-407a-8ce7-e38be1181c14)
 
 
+## Live-Newspaper
+
+* It is an augmented reality app that renders live video on top of images on newspapers.
+* A different experience in the real world for harry potter lovers
+
+![harry](https://github.com/mesutgdk/Augmented-Reality-Projects/assets/112901255/683dc887-be37-48d5-8c65-75ff82e7a90d)
+
+
+
+
 
 
 
